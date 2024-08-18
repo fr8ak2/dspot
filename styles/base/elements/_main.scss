@@ -1,0 +1,9 @@
+@import 'styles/abstracts/variables/typography';
+@import 'styles/abstracts/mixins/functions';
+
+:where(main) {
+    position: relative;
+    padding: rems(160 0 120);
+    min-height: 100vh;
+    z-index: 2;
+}

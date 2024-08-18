@@ -1,0 +1,9 @@
+@import 'headings';
+
+:where(b, strong) {
+    font-weight: 700;
+}
+
+:where(p) {
+    margin: 0 0 rem(20px);
+}

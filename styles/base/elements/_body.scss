@@ -1,0 +1,11 @@
+:where(body) {
+	position: relative;
+    font-family: $font__main;
+    font-weight: 400;
+    font-size: rem($font__size-body);
+    color: $color__text-main;
+    background: $color__background-body;
+    line-height: $font__line-height-body;
+    @include font-smoothing;
+    @include text-rendering;
+}

@@ -1,0 +1,19 @@
+:where(ul, ol) {
+    margin: 0;
+}
+
+:where(ul) {
+    list-style-type: none;
+}
+
+:where(ol) {
+    list-style: decimal;
+}
+
+:where(dt) {
+    font-weight: 700;
+}
+
+:where(dd) {
+    margin: 0 1.5em 1.5em;
+}

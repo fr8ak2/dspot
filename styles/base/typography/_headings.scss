@@ -1,0 +1,30 @@
+:where(h1, h2, h3, h4, h5, h6) {
+    font-family: $font__main;
+    font-weight: 700;
+    margin: 0 0 rem(24);
+    line-height: 1.2;
+}
+
+:where(h1, .--h1) {
+    font-size: rem($font-size-h1);
+}
+
+:where(h2, .--h2) {
+    font-size: rem($font-size-h2);
+}
+
+:where(h3, .--h3) {
+    font-size: rem($font-size-h3);
+}
+
+:where(h4, .--h4) {
+    font-size: rem($font-size-h4);
+}
+
+:where(h5, .--h5) {
+    font-size: rem($font-size-h5);
+}
+
+:where(h6, .--h6) {
+    font-size: rem($font-size-h6);
+}

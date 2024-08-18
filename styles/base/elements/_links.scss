@@ -1,0 +1,8 @@
+:where(a) {
+    color: inherit;
+    text-decoration: none;
+
+    &:is(:hover, :focus, :active) {
+        outline: none;
+    }
+}

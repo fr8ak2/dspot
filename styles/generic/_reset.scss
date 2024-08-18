@@ -1,0 +1,22 @@
+
+:where(svg):not(:root) {
+    overflow: hidden;
+}
+
+:where(.svg-symbols) {
+    display: none;
+}
+
+::selection {
+    background-color: $color__background-selection;
+    color: $color__text-selection;
+    -webkit-text-fill-color: $color__text-selection;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background-color: $color__background-selection;
+    color: $color__text-selection;
+    -webkit-text-fill-color: $color__text-selection;
+    text-shadow: none;
+}

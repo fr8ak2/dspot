@@ -1,0 +1,10 @@
+:where(html) {
+    @include overflow-scrolling;
+    @include text-size-adjust;
+}
+
+:where(html, body) {
+    max-width: $size__site-main;
+    min-height: $size__site-height;
+    overscroll-behavior: none;
+}

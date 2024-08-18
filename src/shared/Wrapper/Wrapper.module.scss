@@ -1,0 +1,7 @@
+@import 'styles/abstracts/variables/structure';
+
+.wrapper {
+    position: relative;
+    width: $size__site-wrapper;
+    margin: 0 $size__site-wrapper-padding;
+}

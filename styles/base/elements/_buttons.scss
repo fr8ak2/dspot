@@ -1,0 +1,5 @@
+:where(button, input:is([type="button"], [type="reset"], [type="submit"])) {
+    background: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
