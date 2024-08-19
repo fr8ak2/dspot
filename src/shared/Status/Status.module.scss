@@ -3,7 +3,7 @@
 @import 'styles/abstracts/mixins/functions';
 
 .module {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     font-weight: 500;

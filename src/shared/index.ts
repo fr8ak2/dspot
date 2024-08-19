@@ -1,6 +1,7 @@
 export * from './Available/Available'
 export * from './Box/Box'
 export * from './Button/Button'
+export * from './Loading/Loading'
 export * from './Section/Section'
 export * from './Status/Status'
 export * from './Wrapper/Wrapper'

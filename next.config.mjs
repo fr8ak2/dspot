@@ -11,7 +11,20 @@ const nextConfig = {
         ],
     },
     images: {
-        domains: ['localhost', 's3.amazonaws.com'],
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'flic.kr',
+                port: '',
+                pathname: '/p/**',
+            },
+            {
+                protocol: 'https',
+                hostname: 's3.amazonaws.com',
+                port: '',
+                pathname: '/p/**',
+            },
+        ],
         formats: ['image/avif', 'image/webp'],
     },
 }

@@ -3,6 +3,7 @@ export interface Friend {
     img: string
     first_name: string
     last_name: string
+    full_name: string
     status: string
     available: boolean
 }

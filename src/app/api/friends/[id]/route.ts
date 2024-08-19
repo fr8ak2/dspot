@@ -2,12 +2,14 @@ import 'server-only'
 
 import { NextResponse } from 'next/server'
 
+import { Friend } from '@/types/friends'
+import { concat } from '@/utils'
 import { FRIEND_DETAIL_ENDPOINT, FRIENDS_API_URL } from '@/utils/api'
 
-export async function GET(
+export const GET = async (
     request: Request,
     { params }: { params: { id: string } },
-) {
+) => {
     const id = params.id
 
     if (!id) {
@@ -18,20 +20,25 @@ export async function GET(
     }
 
     try {
-        const response = await fetch(
+        const res = await fetch(
             `${FRIENDS_API_URL()}${FRIEND_DETAIL_ENDPOINT(id)}`,
         )
 
-        if (!response.ok) {
+        if (!res.ok) {
             return NextResponse.json(
                 { error: `Failed to fetch friend with id: ${id}` },
                 { status: 400 },
             )
         }
 
-        const data = (await response.json()) as string[]
+        const data = (await res.json()) as Friend
 
-        return NextResponse.json(data)
+        const json = {
+            ...data,
+            full_name: `${data.first_name} ${data.last_name}`,
+        }
+
+        return NextResponse.json(json)
     } catch (e) {
         const error = e instanceof Error ? e.message : 'Internal Server Error'
 

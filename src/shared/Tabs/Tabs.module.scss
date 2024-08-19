@@ -1,0 +1,52 @@
+@import 'styles/abstracts/variables/colors';
+@import 'styles/abstracts/variables/ease';
+@import 'styles/abstracts/variables/typography';
+@import 'styles/abstracts/mixins/functions';
+
+.module {
+    position: relative;
+}
+
+.labels {
+    display: flex;
+    gap: 0 rem(16);
+    margin: 0 0 rem(10);
+    cursor: pointer;
+}
+
+.label {
+    position: relative;
+    font-weight: 500;
+    min-width: rem(65);
+    padding: rems(8 0);
+    color: $color__text-gray;
+    text-align: center;
+    transition: color .35s $ease-in;
+}
+
+.active {
+    color: $color__text-main;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: rem(2);
+        background: $color__background-dark;
+        border-radius: rem(6);
+    }
+}
+
+.content {
+    position: relative;
+}
+
+.tab {
+    display: none;
+}
+
+.show {
+    display: block;
+}

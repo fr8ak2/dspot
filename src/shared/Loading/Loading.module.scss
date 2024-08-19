@@ -1,0 +1,7 @@
+@import 'styles/abstracts/variables/typography';
+@import 'styles/abstracts/mixins/functions';
+
+.module {
+    padding: rems(240 0 120);
+    text-align: center;
+}

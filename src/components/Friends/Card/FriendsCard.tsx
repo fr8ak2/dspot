@@ -13,8 +13,6 @@ interface FriendCardProps {
 }
 
 const FriendsCard: FC<FriendCardProps> = ({ friend }) => {
-    const name = concat([friend.first_name, friend.last_name])
-
     return (
         <Box className={styles.item}>
             <Box className={styles.content}>
@@ -22,15 +20,15 @@ const FriendsCard: FC<FriendCardProps> = ({ friend }) => {
                     <Available available={friend.available} size="small" />
 
                     <Image
-                        className="--contain"
+                        className="--cover"
                         src={`/img/avatar.jpg`} // img from object not working, some issues with S3 bucket
                         fill
-                        alt={name}
+                        alt={friend.full_name}
                     />
                 </Box>
 
                 <Box className={styles.info}>
-                    <h2>{name}</h2>
+                    <h2>{friend.full_name}</h2>
                     {friend.status && <Status status={friend.status} />}
                 </Box>
             </Box>

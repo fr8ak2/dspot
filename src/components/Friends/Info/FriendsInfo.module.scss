@@ -1,0 +1,100 @@
+@import 'styles/abstracts/variables/colors';
+@import 'styles/abstracts/variables/typography';
+@import 'styles/abstracts/mixins/functions';
+
+.module {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: rems(60 0);
+    min-height: 100vh;
+
+    h1 {
+        margin: 0 0 rem(10);
+        color: $color__text-main;
+    }
+}
+
+.inner {
+    max-width: rem(608);
+    width: 100%;
+    height: 100%;
+    padding: rems(60);
+    background: rgb($color__background-light, 50%);
+    border-radius: rem(8);
+}
+
+.header {
+    display: flex;
+    flex-flow: column;
+}
+
+.title {
+    position: relative;
+}
+
+.img {
+    position: relative;
+    width: rem(150);
+    height: rem(150);
+    margin: 0 0 rem(24);
+
+    > img {
+        border-radius: rem(4);
+    }
+}
+
+.content {
+    margin: rems(30 0 0);
+}
+
+.tab {
+    width: 100%;
+    min-height: rem(224);
+    padding: rems(0 28);
+    background: $color__background-light;
+    border-radius: rem(8);
+    box-shadow: 0 rem(10) rem(20) 0 rgb(#ccd0df, 50%);
+
+    h2 {
+        font-weight: 500;
+        margin: 0;
+    }
+}
+
+.tabItem {
+    padding: rems(28 0);
+
+    &:not(:last-of-type) {
+        border-bottom: 1px solid rgb($color__border-lilac, 50%);
+    }
+}
+
+.tabBio {
+
+    > h2 {
+        margin: 0 0 rem(10);
+    }
+}
+
+.tabDetail {
+    display: flex;
+    justify-content: space-between;
+
+    > h2, span {
+        flex: 1;
+    }
+}
+
+.tabLocation {
+    display: flex;
+    flex-flow: column;
+    gap: rems(14 10);
+}
+
+.tabImgs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: rem(20);
+    padding: rem(20);
+}

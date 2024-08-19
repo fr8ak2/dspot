@@ -12,6 +12,7 @@
     },
     "dependencies": {
         "clsx": "^2.1.1",
+        "fslightbox-react": "^1.7.6",
         "next": "14.2.5",
         "react": "^18",
         "react-dom": "^18",
@@ -19,6 +20,7 @@
     },
     "devDependencies": {
         "@eslint/migrate-config": "^1.2.0",
+        "@types/fslightbox-react": "^1",
         "@types/node": "^20",
         "@types/react": "^18",
         "@types/react-dom": "^18",

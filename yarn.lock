@@ -283,6 +283,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/fslightbox-react@npm:^1":
+  version: 1.7.7
+  resolution: "@types/fslightbox-react@npm:1.7.7"
+  dependencies:
+    "@types/react": "npm:*"
+  checksum: 10c0/6fc49ccdcd4c5d23eec63486b34f8ce898e0fe332f16c3f0b77bbfd8add482850138d622a6ddea16e4b98d52298d57a409d25710df511375f47fc5b20535db76
+  languageName: node
+  linkType: hard
+
 "@types/json5@npm:^0.0.29":
   version: 0.0.29
   resolution: "@types/json5@npm:0.0.29"
@@ -1177,6 +1186,7 @@ __metadata:
   resolution: "dspot@workspace:."
   dependencies:
     "@eslint/migrate-config": "npm:^1.2.0"
+    "@types/fslightbox-react": "npm:^1"
     "@types/node": "npm:^20"
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
@@ -1190,6 +1200,7 @@ __metadata:
     eslint-plugin-import: "npm:^2.29.1"
     eslint-plugin-react: "npm:^7.35.0"
     eslint-plugin-simple-import-sort: "npm:^12.1.1"
+    fslightbox-react: "npm:^1.7.6"
     globals: "npm:^15.9.0"
     husky: "npm:^9.1.4"
     lint-staged: "npm:^15.2.9"
@@ -1918,6 +1929,17 @@ __metadata:
   dependencies:
     node-gyp: "npm:latest"
   conditions: os=darwin
+  languageName: node
+  linkType: hard
+
+"fslightbox-react@npm:^1.7.6":
+  version: 1.7.6
+  resolution: "fslightbox-react@npm:1.7.6"
+  peerDependencies:
+    prop-types: ">=15.6.2"
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  checksum: 10c0/24e8c3915b9d7a4f250586e357661ebe6b120d3233ba79f36e54c6434730c9d823edd9eaa91fa9b6eb87e4214204375f005afb63cdfa15fe5389fe79303f42a2
   languageName: node
   linkType: hard
 
