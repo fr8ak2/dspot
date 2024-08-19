@@ -3,6 +3,7 @@
 @import 'styles/abstracts/mixins/functions';
 
 .module {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,12 +17,30 @@
 }
 
 .inner {
+    position: relative;
     max-width: rem(608);
     width: 100%;
     height: 100%;
     padding: rems(60);
     background: rgb($color__background-light, 50%);
     border-radius: rem(8);
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    left: rem(-80);
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: rem(44);
+        height: rem(44);
+        padding: rem(10);
+        background: $color__background-light;
+        border-radius: rem(8);
+    }
 }
 
 .header {
