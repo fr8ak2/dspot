@@ -11,10 +11,10 @@ const mockFriends: Friend[] = [
     {
         id: '1',
         img: '/img/avatar.jpg',
-        first_name: 'John',
-        last_name: 'Doe',
-        full_name: 'John Doe',
-        status: 'Designing beatiful things',
+        first_name: 'Steph',
+        last_name: 'Walters',
+        full_name: 'Steph Walters',
+        status: 'Designing beautiful things',
         available: true,
     },
     {
@@ -38,7 +38,7 @@ describe('FriendsList', () => {
 
         expect(
             await screen.findByText(
-                'John Doe, Status: Designing beatiful things, Available: Online',
+                'Steph Walters, Status: Designing beautiful things, Available: Online',
             ),
         ).toBeInTheDocument()
         expect(

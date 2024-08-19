@@ -10,9 +10,9 @@ jest.mock('@/lib/fetch')
 const mockFriend: FriendDetail = {
     id: '1',
     img: '/img/avatar.jpg',
-    first_name: 'John',
-    last_name: 'Doe',
-    full_name: 'John Doe',
+    first_name: 'Steph',
+    last_name: 'Walters',
+    full_name: 'Steph Walters',
     bio: "I'm very choosy. I'm also very suspicious, very irrational and I have a very short temper. I'm also extremely jealous and slow to forgive. Just so you know.",
     phone: '(820) 289-1818',
     address_1: '5190 Center Court Drive',
@@ -32,7 +32,7 @@ describe('FriendDetailPage', () => {
         render(<FriendsDetails params={{ id: 'id' }} />)
 
         expect(
-            await screen.findByText("John Doe's Details"),
+            await screen.findByText('Steph Walters Details'),
         ).toBeInTheDocument()
         expect(await screen.findByText('Available: Online')).toBeInTheDocument()
         expect(

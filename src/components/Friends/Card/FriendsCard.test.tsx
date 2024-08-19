@@ -26,7 +26,7 @@ describe('FriendsCard', () => {
         )
 
         expect(
-            getByText('John Doe, Status: At work..., Available: Online'),
+            getByText('Steph Walters, Status: At work..., Available: Online'),
         ).toBeInTheDocument()
     })
 })

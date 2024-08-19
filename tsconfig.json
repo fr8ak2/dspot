@@ -6,6 +6,7 @@
             "dom.iterable",
             "esnext"
         ],
+        "types": ["node", "jest"],
         "target": "esnext",
         "allowJs": true,
         "skipLibCheck": true,
@@ -38,8 +39,7 @@
     ],
     "exclude": [
         "./cypress.config.ts",
-        "node_modules",
         "cypress",
-        "**/*.cy.tsx"
+        "node_modules"
     ]
 }
