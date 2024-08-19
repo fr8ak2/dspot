@@ -21,13 +21,32 @@
     justify-content: center;
     width: 100%;
     height: 100%;
-    padding: rems(80 40);
+    padding: rems(40);
     background: rgb(#373e5a, 90%);
+    overflow: hidden;
     z-index: 101;
+}
+
+.modalClose {
+    position: absolute;
+    top: rem(60);
+    right: rem(60);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(44);
+    height: rem(44);
+    padding: rem(10);
+    background: rgb($color__background-light, 10%);
+    border-radius: rem(8);
+    cursor: pointer;
 }
 
 .modalImg {
     position: relative;
     width: rem(985);
     height: rem(656);
+    box-shadow: 0 rems(30 60) 0 rgb($color__background-dark, 30%);
+    border-radius: rem(4);
+    overflow: hidden;
 }
