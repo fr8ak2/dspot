@@ -15,6 +15,6 @@ export interface FriendDetail extends Friend {
     state: string
     zipcode: string | number
     bio: string
-    photos: string[]
-    statuses: string[]
+    photos?: string[]
+    statuses?: string[]
 }
