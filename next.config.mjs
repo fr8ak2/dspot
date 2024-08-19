@@ -11,6 +11,7 @@ const nextConfig = {
         ],
     },
     images: {
+        domains: ['localhost', 's3.amazonaws.com'],
         formats: ['image/avif', 'image/webp'],
     },
 }

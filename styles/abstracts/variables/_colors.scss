@@ -1,32 +1,34 @@
 // Background
-$color__background-body: #121212;
+$color__background-body: #f4f6fe;
 $color__background-light: #fff;
-$color__background-screen: #05071a;
-$color__background-selection: #000;
+$color__background-green: #16ba44;
+$color__background-gray: #a5aab5;
+$color__background-screen: #f4f6fe;
+$color__background-selection: #2E57FA;
 
 // Text
-$color__text-main: #fff;
+$color__text-main: #000;
 $color__text-light: #fff;
-$color__text-dark: #121212;
-$color__text-screen: #121212;
+$color__text-lilac: #b1b9db;
+$color__text-screen: #000;
 
 // Link
-$color__link: #05071a;
-$color__link-hover: #fff;
+$color__link: #5c5f6b;
+$color__link-hover: #000;
 $color__text-selection: #fff;
 
 // Button
-$color__background-button: #1a1a1a;
-$color__background-button-hover: rgba(#5a768e, 100%);
+$color__background-button: #2e57fa;
+$color__background-button-hover: #052dcc;
 
-$color__border-button: #1a1a1a;
-$color__border-button-hover: rgba(#5a768e, 100%);
+$color__border-button: #0637f9;
+$color__border-button-hover: #0637f9;
 
 $color__text-button: #fff;
-$color__text-button-hover: lighten(#1a1a1a, 100%);
+$color__text-button-hover: #fff;
 
 // Border
-$color__border-dark: #1a1a1a;
-$color__border-blue: #5a768e;
+$color__border-blue: #0637F9;
+$color__border-lilac: #b1b9db;
 $color__border-input: #000;
 $color__border-abbr: #fff;

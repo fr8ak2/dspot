@@ -4,7 +4,15 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { ReactNode } from 'react'
 
-const inter = Inter({ subsets: ['latin'] })
+import { LayoutDefault } from '@/layouts/LayoutDefault'
+
+const inter = Inter({
+    weight: ['400', '500', '700'],
+    style: ['normal'],
+    subsets: ['latin'],
+    variable: '--font-inter',
+    display: 'swap',
+})
 
 export const metadata: Metadata = {
     title: 'Friends App',
@@ -17,8 +25,10 @@ const RootLayout = ({
     children: ReactNode
 }>) => {
     return (
-        <html lang="en">
-            <body className={inter.className}>{children}</body>
+        <html lang="en" className={inter.variable}>
+            <body>
+                <LayoutDefault>{children}</LayoutDefault>
+            </body>
         </html>
     )
 }

@@ -1,0 +1,45 @@
+@import 'styles/abstracts/variables/colors';
+@import 'styles/abstracts/variables/typography';
+@import 'styles/abstracts/mixins/functions';
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(20);
+    width: 100%;
+    min-height: rem(88);
+    padding: rems(14 24 14 14);
+    border-radius: rem(8);
+    box-shadow: 0 rem(10) rem(20) 0 rgb(#ccd0df, 50%);
+
+    h2 {
+        font-weight: 500;
+        font-size: rem(16);
+        color: $color__text-main;
+        margin: 0;
+    }
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: rem(14);
+}
+
+.info {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column;
+    gap: rem(8);
+}
+
+.img {
+    position: relative;
+    width: rem(60);
+    height: rem(60);
+
+    > img {
+        border-radius: rem(4);
+    }
+}

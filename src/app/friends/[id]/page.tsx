@@ -1,5 +1,5 @@
-const FriendsDetailPage = () => {
+const FriendsDetails = () => {
     return <></>
 }
 
-export default FriendsDetailPage
+export default FriendsDetails

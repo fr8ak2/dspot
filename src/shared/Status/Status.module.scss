@@ -1,0 +1,15 @@
+@import 'styles/abstracts/variables/colors';
+@import 'styles/abstracts/variables/typography';
+@import 'styles/abstracts/mixins/functions';
+
+.module {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: rem(14);
+    color: $color__text-lilac;
+    padding: rems(2 8);
+    border-radius: rem(20);
+    border: 1px solid $color__border-lilac
+}
